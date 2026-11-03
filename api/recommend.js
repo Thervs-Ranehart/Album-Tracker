@@ -25,8 +25,7 @@ export default async function handler(req, res) {
   const MODEL = "gemini-3.5-flash-lite"; // use a current free-tier modelfrom AI Studio
   try {
     const r = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateCon
-tent`,
+      `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
