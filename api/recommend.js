@@ -1,3 +1,4 @@
+import process from "node:process";
 export default async function handler(req, res) {
   if (req.method !== "POST")
     return res.status(405).json({ error: "Use POST." });

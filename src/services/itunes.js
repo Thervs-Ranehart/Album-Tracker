@@ -14,8 +14,7 @@ export async function searchAlbums(term) {
   return data.results;
 }
 export async function getAlbumTracks(collectionId) {
-  const data = await request(`${BASE}/lookup?
-id=${collectionId}&entity=song`);
+  const data = await request(`${BASE}/lookup?id=${collectionId}&entity=song`);
   // the first item is the album itself, the rest are tracks
   const [album, ...tracks] = data.results;
   return { album, tracks: tracks.filter((t) => t.wrapperType === "track") };
