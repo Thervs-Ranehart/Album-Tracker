@@ -204,7 +204,7 @@ textarea {
 .chip.on {
   background: var(--label);
   color: var(--ink);
-  border-color: var(-- label);
+  border-color: var(--label);
   font-weight: 700;
 }
 .detail-head {

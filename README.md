@@ -42,7 +42,7 @@
 
 # AI-Powered Recommendations
 
-    * ceive album recommendations based on the user's saved albums and ratings.
+    * Receive album recommendations based on the user's saved albums and ratings.
     * Generate recommendations using Google's Gemini API.
 
 ---
